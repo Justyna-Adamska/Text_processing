@@ -3,8 +3,8 @@ reverse: text.o
 
 text.o: text.c
 	cc -c text.c
-run: reverse text
-	./reverse < text
+run: reverse my_text
+	./reverse < my_text
 
 clean: 
 	rm text.o reverse
