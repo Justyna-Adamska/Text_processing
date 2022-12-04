@@ -29,7 +29,7 @@ int  word (char* W){
 
 int len = strlen(W); //W strnlen(W, 10);można ograniczyć długość stringa jaki ma być sczytany do np. 10 liter
 
-printf("dlugosc linii to: %d\n",len);
+//printf("dlugosc linii to: %d\n",len);
 
 int i = len;
 
@@ -53,12 +53,12 @@ return 0;
  
 int main (){
 
-printf("Enter your text and press ENTER:");
+printf("Enter your text and press ENTER:\n");
 int c,i =0;
 do {
 char *A=getlin();
 word(A);
-printf("Line %d: %s\n", i,A);
+//printf("Line %d: %s\n", i,A);
 i++;
 free(A);
 }while((c=getchar()) != EOF);
